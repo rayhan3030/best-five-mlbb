@@ -19,7 +19,7 @@
     <!-- Header Section Start-->
     <header id="header" class="bg-[url('/images/Banner.png')] text-white text-center ">
 
-        <h1 class="text-8xl font-bold pt-40">Select Your PvP Team</h1>
+        <h1 class="text-8xl font-bold pt-40">Select Your Best Five</h1>
         <h1 class="text-slate-300">Mobile Legends: Bang Bang <small>TM</small></h1>
         <p class="pb-40 pt-20 px-40 text-2xl"> Welcome to Mobile Legend Bang Bang e-Sport Competition. This website
             tells you how can you add 5 of your favourite MlBB Players
@@ -29,50 +29,6 @@
         </p>
     </header>
     <!--Header Section End-->
-    <button onclick="addPlayerSelected(this);this.disabled=true;"
-        class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ki-class-dimu">Select</button>
-    </div>
-    </div>
-    <!--3rd Player Beatrix-->
-    <div class="">
-        <div class=""><img class="w-full" src="images/player3.png" alt=""></div>
-        <div class="text-center">
-            <h1 class="text-2xl font-semibold text-white">Beatrix</h1>
-            <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Marksman. Power: Guns</p>
-            <button id="beatrix-btn" onclick="addPlayerSelected(this);this.disabled=true;"
-                class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
-        </div>
-    </div>
-    <!--4th Player Akai-->
-    <div class="">
-        <div class=""><img class="w-full" src="images/player4.png" alt=""></div>
-        <div class="text-center">
-            <h1 class="text-2xl font-semibold text-white">Akai</h1>
-            <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Tank. Power: Physical</p>
-            <button onclick="addPlayerSelected(this);this.disabled=true;"
-                class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
-        </div>
-    </div>
-    <!--5th Player Oddette-->
-    <div class="">
-        <div class=""><img class="w-full" src="images/player5.png" alt=""></div>
-        <div class="text-center">
-            <h1 class="text-2xl font-semibold text-white">Oddete</h1>
-            <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Mage. Power: Magic</p>
-            <button onclick="addPlayerSelected(this);this.disabled=true;"
-                class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
-        </div>
-    </div>
-    <!--6th Player Sun-->
-    <div class="">
-        <div class=""><img class="w-full" src="images/player6.png" alt=""></div>
-        <div class="text-center">
-            <h1 class="text-2xl font-semibold text-white">Sun The Monkey King</h1>
-            <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Fighter. Power: Clone</p>
-            <button onclick="addPlayerSelected(this);this.disabled=true;"
-                class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
-        </div>
-    </div>
     <main class="pt-10 px-7 pb-10">
         <!-- Player Grid Start-->
         <div class="grid grid-rows-1 grid-flow-col gap-4">
@@ -93,67 +49,110 @@
                     <div class="text-center">
                         <h1 class="text-2xl font-semibold text-white">Balmond</h1>
                         <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Fighter. Power: Axe</p>
-
-
-
-
+                        <button onclick="addPlayerSelected(this);this.disabled=true;"
+                            class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ki-class-dimu">Select</button>
                     </div>
-                    <div class="text-white">
-                        <!-- Selected Player/Hero's Section Added -->
-                        <div>
-                            <div class="bg-black w-80 rounded-lg">
-                                <h1 class="text-center pt-5 pb-2s font-semibold text-xl"> Selected-Hero's <span
-                                        id="total-added-player">0</span> </h1>
-                                <ul id="players-list" class="px-4 pb-5">
-                                    <!-- <li>Nana</li> -->
-                                </ul>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="bg-black w-80 rounded-lg ">
-                            <h1 class="text-center pb-4 pt-5 font-semibold text-xl"> Budget </h1>
-                            <div class="">
-                                <div class="text-center pb-5">
-                                    <span> Per Player</span>
-                                    <input class="flex-initial w-70 text-black" type="text" name="" id="per-player"
-                                        placeholder="enter amount">
-                                </div>
-                                <div class="text-center">
-                                    <button
-                                        class="w-9/12 bg-blue-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex"
-                                        id="calculate-btn">Calculate</button>
-                                </div>
-                            </div>
-                            <div class="px-9 pt-5 pb-5">
-                                <h1>Player Expenses $<span id="player-expenses">0</span></h1>
-                            </div>
-                            <div class="pb-10">
-                                <div class="text-center pb-5">
-                                    <span> Manager </span>
-                                    <input class="flex-initial w-70 text-black" type="text" name="" id="manager-salary"
-                                        placeholder="enter amount">
-                                </div>
-                                <div class="text-center pb-5">
-                                    <span>ProCoach</span>
-                                    <input class="flex-initial w-70 text-black" type="text" name="" id="coach-salary"
-                                        placeholder="enter amount">
-                                </div>
-                                <div class="text-center">
-                                    <button id="calculate-total"
-                                        class=" w-9/12 bg-blue-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                                        Calculate Total</button>
-                                </div>
-                                <div class="px-9 pt-5 pb-5">
-                                    <h1>Total: $<span class="text-rose-600 font-bold text-l"
-                                            id="total-expenses">0</span></h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
+                <!--3rd Player Beatrix-->
+                <div class="">
+                    <div class=""><img class="w-full" src="images/player3.png" alt=""></div>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold text-white">Beatrix</h1>
+                        <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Marksman. Power: Guns</p>
+                        <button id="beatrix-btn" onclick="addPlayerSelected(this);this.disabled=true;"
+                            class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
+                    </div>
+                </div>
+                <!--4th Player Akai-->
+                <div class="">
+                    <div class=""><img class="w-full" src="images/player4.png" alt=""></div>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold text-white">Akai</h1>
+                        <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Tank. Power: Physical</p>
+                        <button onclick="addPlayerSelected(this);this.disabled=true;"
+                            class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
+                    </div>
+                </div>
+                <!--5th Player Oddette-->
+                <div class="">
+                    <div class=""><img class="w-full" src="images/player5.png" alt=""></div>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold text-white">Oddete</h1>
+                        <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Mage. Power: Magic</p>
+                        <button onclick="addPlayerSelected(this);this.disabled=true;"
+                            class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
+                    </div>
+                </div>
+                <!--6th Player Sun-->
+                <div class="">
+                    <div class=""><img class="w-full" src="images/player6.png" alt=""></div>
+                    <div class="text-center">
+                        <h1 class="text-2xl font-semibold text-white">Sun The Monkey King</h1>
+                        <p class="text-sm pb-2 text-stone-500 font-semibold">Role: Fighter. Power: Clone</p>
+                        <button onclick="addPlayerSelected(this);this.disabled=true;"
+                            class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Select</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="text-white">
+                <!-- Selected Player/Hero's Section Added -->
+                <div>
+                    <div class="bg-black w-80 rounded-lg">
+                        <h1 class="text-center pt-5 pb-2s font-semibold text-xl"> Selected-Hero's <span
+                                id="total-added-player">0</span> </h1>
+                        <ul id="players-list" class="px-4 pb-5">
+                            <!-- <li>Nana</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="bg-black w-80 rounded-lg ">
+                    <h1 class="text-center pb-4 pt-5 font-semibold text-xl"> Budget </h1>
+                    <div class="">
+                        <div class="text-center pb-5">
+                            <span> Per Player</span>
+                            <input class="flex-initial w-70 text-black" type="text" name="" id="per-player"
+                                placeholder="enter amount">
+                        </div>
+                        <div class="text-center">
+                            <button
+                                class="w-9/12 bg-blue-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex"
+                                id="calculate-btn">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="px-9 pt-5 pb-5">
+                        <h1>Player Expenses $<span id="player-expenses">0</span></h1>
+                    </div>
+                    <div class="pb-10">
+                        <div class="text-center pb-5">
+                            <span> Manager </span>
+                            <input class="flex-initial w-70 text-black" type="text" name="" id="manager-salary"
+                                placeholder="enter amount">
+                        </div>
+                        <div class="text-center pb-5">
+                            <span>ProCoach</span>
+                            <input class="flex-initial w-70 text-black" type="text" name="" id="coach-salary"
+                                placeholder="enter amount">
+                        </div>
+                        <div class="text-center">
+                            <button id="calculate-total"
+                                class=" w-9/12 bg-blue-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                                Calculate Total</button>
+                        </div>
+                        <div class="px-9 pt-5 pb-5">
+                            <h1>Total: $<span class="text-rose-600 font-bold text-l" id="total-expenses">0</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </main>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
