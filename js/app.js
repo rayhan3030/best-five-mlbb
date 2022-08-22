@@ -22,6 +22,7 @@ function display(playerSelected) {
     }
 
 }
+
 function addPlayerSelected(element) {
 
 
@@ -89,3 +90,4 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const totalExpense = document.getElementById('total-expenses');
     totalExpense.innerText = totalBudget;
 })
+
