@@ -49,3 +49,22 @@ function addPlayerSelected(element) {
     display(eSportArray);
 
 }
+
+document.getElementById('calculate-btn').addEventListener('click', function () {
+    const perPlayerMoneyField = document.getElementById('per-player');
+    const perPlayerMoneyFieldIsString = perPlayerMoneyField.value;
+    const perPlayerMoneyIs = parseInt(perPlayerMoneyFieldIsString);
+    perPlayerMoneyField.value = '';
+
+    const totalAddedPlayer = document.getElementById('total-added-player')
+    const totalAddedPlayerIsString = totalAddedPlayer.innerText;
+    const totalAddedPlayerIs = parseInt(totalAddedPlayerIsString);
+
+    const totalMoneyForPlayer = perPlayerMoneyIs * totalAddedPlayerIs;
+
+    const playerExpenses = document.getElementById('player-expenses');
+
+    playerExpenses.innerText = totalMoneyForPlayer;
+
+
+})
