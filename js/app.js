@@ -68,3 +68,24 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
 })
+
+document.getElementById('calculate-total').addEventListener('click', function () {
+    const managerSalary = document.getElementById('manager-salary');
+    const managerSalaryIsString = managerSalary.value;
+    const managerSalaryIs = parseInt(managerSalaryIsString);
+    managerSalary.value = '';
+
+    const coachSalary = document.getElementById('coach-salary');
+    const coachSalaryIsString = coachSalary.value;
+    const coachSalaryIs = parseInt(coachSalaryIsString);
+    coachSalary.value = '';
+
+    const playersExpense = document.getElementById('player-expenses');
+    const playerExpensesIsString = playersExpense.innerText;
+    const playerExpensesIs = parseInt(playerExpensesIsString);
+
+    totalBudget = managerSalaryIs + coachSalaryIs + playerExpensesIs;
+
+    const totalExpense = document.getElementById('total-expenses');
+    totalExpense.innerText = totalBudget;
+})
