@@ -22,3 +22,30 @@ function display(playerSelected) {
     }
 
 }
+function addPlayerSelected(element) {
+
+
+    // console.log(element.parentNode.children[0].innerText)
+
+    const playerName = element.parentNode.children[0].innerText;
+    // console.log(playerName);
+
+    const playerObj = {
+        playerName: playerName
+
+    }
+    if (eSportArray.length < 5 === true) {
+        eSportArray.push(playerObj);
+    }
+    else {
+        alert('You Can Add Only 5 Players in One Team ')
+    }
+
+
+
+    // console.log(eSportArray)
+    // console.log(eSportArray.length);
+    document.getElementById('total-added-player').innerText = eSportArray.length;
+    display(eSportArray);
+
+}
